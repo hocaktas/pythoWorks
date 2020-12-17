@@ -1,0 +1,6 @@
+Form işlemleri;12;A;19;11:10 - 11:40;Zoom;https://us04web.zoom.us/j/6807291636?pwd=RzFTaVNDU3MxZU9iTHlId0k1ekFoZz09;19102020;İnternet Programcılığı;Açık Kaynak Kodla Form İşlemleri ve Oturum Yönetimi;0;MUHAMMET KALKAN
+İşlemciler;9;A;17;15:50 - 16:20;Zoom;https://us04web.zoom.us/j/6807291636?pwd=RzFTaVNDU3MxZU9iTHlId0k1ekFoZz09;19102020;Bilişim Teknolojilerinin Temelleri;İç Donanım Birimleri;Anakarta İşlemciyi Monte Etme İşlemleri;MUHAMMET KALKAN
+İşlemciler;9;A;17;16:30 - 17:00;Zoom;https://us04web.zoom.us/j/6807291636?pwd=RzFTaVNDU3MxZU9iTHlId0k1ekFoZz09;19102020;Bilişim Teknolojilerinin Temelleri;İç Donanım Birimleri;Anakarta İşlemciyi Monte Etme İşlemleri;MUHAMMET KALKAN
+İşlemciler;9;A;17;17:10 - 17:40;Zoom;https://us04web.zoom.us/j/6807291636?pwd=RzFTaVNDU3MxZU9iTHlId0k1ekFoZz09;19102020;Bilişim Teknolojilerinin Temelleri;İç Donanım Birimleri;Anakarta İşlemciyi Monte Etme İşlemleri;MUHAMMET KALKAN
+Çizim programı;9;A;17;17:50 - 18:20;Zoom;https://us04web.zoom.us/j/6807291636?pwd=RzFTaVNDU3MxZU9iTHlId0k1ekFoZz09;19102020;Bilgisayarlı Tasarım Uygulamaları;Bilgisayarlı Çizim;Çizim Programı Arayüzü;MUHAMMET KALKAN
+Çizim programı;9;A;17;18:30 - 19:00;Zoom;https://us04web.zoom.us/j/6807291636?pwd=RzFTaVNDU3MxZU9iTHlId0k1ekFoZz09;19102020;Bilgisayarlı Tasarım Uygulamaları;Bilgisayarlı Çizim;Çizim Programı Arayüzü;MUHAMMET KALKAN
