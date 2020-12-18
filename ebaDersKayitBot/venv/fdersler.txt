@@ -13,4 +13,4 @@ Kuran-ı Kerim;4;H;16;18:30 - 19:00;Zoom;https://us04web.zoom.us/j/6807291636?pw
 Kuran-ı Kerim;4;E;17;9:50 - 10:20;Zoom;https://us04web.zoom.us/j/6807291636?pwd=QmxFYStERTVKRWQxVUEzcDlPM2pYUT09;87654321;Din Kültürü;İslam'ı Tanıyalım;0;0
 Kuran-ı Kerim;4;E;17;10:30 - 11:00;Zoom;https://us04web.zoom.us/j/6807291636?pwd=QmxFYStERTVKRWQxVUEzcDlPM2pYUT09;87654321;Din Kültürü;İslam'ı Tanıyalım;0;0
 Kuran-ı Kerim;4;F;17;12:30 - 13:00;Zoom;https://us04web.zoom.us/j/6807291636?pwd=QmxFYStERTVKRWQxVUEzcDlPM2pYUT09;87654321;Din Kültürü;İslam'ı Tanıyalım;0;0
-Kuran-ı Kerim;4;D;17;13:10 - 13:40;Zoom;https://us04web.zoom.us/j/6807291636?pwd=QmxFYStERTVKRWQxVUEzcDlPM2pYUT09;87654321;Din Kültürü;İslam'ı Tanıyalım;0;0
+Kuran-ı Kerim;4;F;17;13:10 - 13:40;Zoom;https://us04web.zoom.us/j/6807291636?pwd=QmxFYStERTVKRWQxVUEzcDlPM2pYUT09;87654321;Din Kültürü;İslam'ı Tanıyalım;0;0

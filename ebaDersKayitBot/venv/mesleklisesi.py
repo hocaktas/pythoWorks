@@ -8,13 +8,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import requests
 import time
-tc="18733010104"#input("E-devlet için Tc Kimlik girin:")
+tc="17980037094"#input("E-devlet için Tc Kimlik girin:")
 passw="06et0370"#input("E-devlet için şifre girin:")
 driver = webdriver.Chrome()
 
 def Main():
        try:
-              dosya = open("fdersler.txt", "r",encoding="utf-8")
+              dosya = open("kdersler.txt", "r",encoding="utf-8")
        except FileExistsError:
               print("Dosya bulunamadı")
        except:
@@ -26,12 +26,14 @@ def Main():
 
        canli_ders()
        for satir in dosya:
+              if "$" in satir:
+                     break;
               satir = satir.split(";")
               ders_bilgileri_gir(dersbaslik=satir[0].capitalize(),
                                  sinif=satir[1],
                                  sube=satir[2],
-                                 dersgunu=satir[3],
-                                 derssaati=satir[4],
+                                 dersgunu=satir[3].strip(),
+                                 derssaati=satir[4].strip(),
                                  dersuygulamasi=satir[5].capitalize(),
                                  derslinki=satir[6],
                                  dersparola=satir[7],
@@ -140,7 +142,7 @@ def ders_bilgileri_gir(dersbaslik,sinif,dersgunu,derssaati,derslinki,dersparola,
        time.sleep(3)
        subeler=driver.find_element_by_class_name("checkBoxContainer").find_elements_by_tag_name("label")
        for s in subeler:
-              if sube in s.text[12:14]:
+              if sube in s.text[17:20]:
                      s.click()
        time.sleep(1)
        driver.find_element_by_xpath('//*[@id="ebaEtudEditView"]/div[2]/div/div/div[1]/div[2]/div[2]/div[2]/div[2]/div').click()
@@ -148,7 +150,7 @@ def ders_bilgileri_gir(dersbaslik,sinif,dersgunu,derssaati,derslinki,dersparola,
 
 
        #katılımcı ekle 1 tane
-       if katilimci!="0\n": #buradaki sorun çözülecek ve birden fazla katılımcı öğretmen eklenecek
+       if katilimci.strip()!="0": #buradaki sorun çözülecek ve birden fazla katılımcı öğretmen eklenecek
               driver.find_element_by_xpath('//*[@id="assistantTeachersMultiSelect"]/span/button').click()
               time.sleep(2)
               driver.find_element_by_xpath('//*[@id="assistantTeachersMultiSelect"]/span/div/div[1]/div[2]/input').send_keys(katilimci)
