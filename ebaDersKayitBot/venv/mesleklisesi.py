@@ -8,8 +8,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import requests
 import time
-tc=""#input("E-devlet için Tc Kimlik girin:")
-passw=""#input("E-devlet için şifre girin:")
+tc="17980037094"#input("E-devlet için Tc Kimlik girin:")
+passw="06et0370"#input("E-devlet için şifre girin:")
 driver = webdriver.Chrome('C:\\Users\\Kemalettin\\Downloads\\chromedriver.exe')
 
 def Main():

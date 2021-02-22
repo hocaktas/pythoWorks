@@ -8,9 +8,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import requests
 import time
-tc=" "#input("E-devlet için Tc Kimlik girin:")
-passw=" "#input("E-devlet için şifre girin:")
-driver = webdriver.Chrome()
+tc=input("E-devlet için Tc Kimlik girin:")
+passw=input("E-devlet için şifre girin:")
+driver = webdriver.Chrome('C:\\Users\\Kemalettin\\Downloads\\chromedriver.exe')
 
 def Main():
        try:
@@ -47,10 +47,10 @@ def sayfa_ac(url):
        driver.get("http://www.eba.gov.tr/#/anasayfa")
 
 def edevlet_giris(tc,parola):
-
+       time.sleep(5)
        ogrt_buton=driver.find_element_by_xpath("/html/body/app-root/app-anasayfa-page/div[2]/div/div/div[1]/div[2]/div[3]/div[3]/a[3]")
        ogrt_buton.click()
-       time.sleep(1)
+       time.sleep(5)
        edevlet_buton=driver.find_element_by_xpath("//*[@id='teacher']/div/button[2]")
        edevlet_buton.click()
        time.sleep(1)
@@ -71,10 +71,10 @@ def canli_ders():
        canliders=driver.find_element_by_xpath("/html/body/div[1]/div[1]/div/div/div[1]/div/div[2]/div[2]/div/div[2]/div[3]/a/div")
        canliders.click()
        time.sleep(8)
-       driver.find_element_by_link_text("TAMAM").click()
+      # driver.find_element_by_link_text("TAMAM").click()
        time.sleep(3)
 
-       harici="/html/body/div[1]/div[1]/div/div/div[1]/div/div[3]/div/div/div[1]/div[2]/div/div/div/div/div[2]"
+       harici="/html/body/div[1]/div[1]/div/div/div[1]/div/div[3]/div/div/div[1]/div[2]/div/div/div/div/div[1]"
        driver.find_element_by_xpath(harici).click()
        time.sleep(5)
        haricieklebtn="//*[@id='liveLessonList']/div[2]/div/div[2]/div/button"
@@ -148,13 +148,13 @@ def ders_bilgileri_gir(dersbaslik,sinif,dersgunu,derssaati,derslinki,dersparola,
 
 
        #katılımcı ekle 1 tane
-       if katilimci!="0\n" or katilimci!="0": #buradaki sorun çözülecek ve birden fazla katılımcı öğretmen eklenecek
-              driver.find_element_by_xpath('//*[@id="assistantTeachersMultiSelect"]/span/button').click()
-              time.sleep(2)
-              driver.find_element_by_xpath('//*[@id="assistantTeachersMultiSelect"]/span/div/div[1]/div[2]/input').send_keys(katilimci)
-              time.sleep(1)
-              driver.find_element_by_xpath('//*[@id="assistantTeachersMultiSelect"]/span/div/div[2]/div').click()
-              time.sleep(2)
+       # if katilimci!="0\n" or katilimci!="0": #buradaki sorun çözülecek ve birden fazla katılımcı öğretmen eklenecek
+       #        driver.find_element_by_xpath('//*[@id="assistantTeachersMultiSelect"]/span/button').click()
+       #        time.sleep(2)
+       #        driver.find_element_by_xpath('//*[@id="assistantTeachersMultiSelect"]/span/div/div[1]/div[2]/input').send_keys(katilimci)
+       #        time.sleep(1)
+       #        driver.find_element_by_xpath('//*[@id="assistantTeachersMultiSelect"]/span/div/div[2]/div').click()
+       #        time.sleep(2)
        #ders kaydetme
        driver.find_element_by_xpath('//*[@id="ebaEtudEditView"]/div[2]/div/div/div[2]/div[2]/div[2]/div').click()
        time.sleep(2)
